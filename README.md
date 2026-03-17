@@ -1,15 +1,15 @@
-# DRM3 Homebrew Tap
+# homebrew-drm3
 
-Homebrew formulae for DRM3 software on macOS.
+Homebrew formulae for installing DRM3 software on macOS.
 
-## Install
+## Usage
 
 ```bash
 brew tap drm3labs/drm3
 brew install mor
 ```
 
-## Available Formulae
+## Formulae
 
 | Formula | Description |
 |---------|-------------|
@@ -17,8 +17,4 @@ brew install mor
 
 ## Other Platforms
 
-Linux, Ubuntu, and Chromebook — see [drm3-releases](https://github.com/drm3labs/drm3-releases).
-
-## More Info
-
-[drm3.network](https://drm3.network)
+For Linux, Ubuntu, Chromebook, and direct downloads see [drm3-releases](https://github.com/drm3labs/drm3-releases).
