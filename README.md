@@ -2,7 +2,7 @@
 
 Homebrew formulae for installing DRM3 software on macOS.
 
-## Usage
+## Install
 
 ```bash
 brew tap drm3labs/drm3
