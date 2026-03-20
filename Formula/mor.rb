@@ -1,38 +1,20 @@
-# Homebrew formula for MOR
-# brew tap drm3labs/drm3 && brew install mor
+# Formula temporarily unavailable — new release pending.
+# Visit https://drm3.network for updates.
 
 class Mor < Formula
   desc "Local AI gateway for Morpheus decentralized inference"
   homepage "https://drm3.network"
-  version "0.1.6"
+  version "0.0.0"
   license "LicenseRef-Proprietary"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/drm3labs/drm3-releases/releases/download/mor-v#{version}/mor-darwin-arm64"
-      sha256 "ddb63f5cf212b8b789c870c084e6661b24fd0e1cb48069d3761f4fae04cb5dbe"
-    end
-    on_intel do
-      url "https://github.com/drm3labs/drm3-releases/releases/download/mor-v#{version}/mor-darwin-amd64"
-      sha256 "6744af6cdf0fb97b223952b535aadebf45df92239eb7a0ca220a5e6f98c26759"
-    end
-  end
+  url "https://drm3.network"
+  sha256 ""
 
   def install
-    binary_name = "mor-darwin-#{Hardware::CPU.arm? ? "arm64" : "amd64"}"
-    bin.install binary_name => "mor"
-  end
-
-  def post_install
-    # Remove macOS quarantine flag (unsigned binary)
-    system "xattr", "-d", "com.apple.quarantine", "#{bin}/mor" rescue nil
-
-    ohai "MOR installed! Get started:"
-    ohai "  mor config set private-key  # Enter your wallet private key"
-    ohai "  mor serve                   # Dashboard at localhost:19377"
+    odie "MOR is not currently available via Homebrew. Visit https://drm3.network for install instructions."
   end
 
   test do
-    assert_match "MOR", shell_output("#{bin}/mor --version")
+    assert true
   end
 end
