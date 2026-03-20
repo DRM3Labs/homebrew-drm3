@@ -24,11 +24,12 @@ class Mor < Formula
   end
 
   def post_install
+    # Remove macOS quarantine flag (unsigned binary)
+    system "xattr", "-d", "com.apple.quarantine", "#{bin}/mor" rescue nil
+
     ohai "MOR installed! Get started:"
-    ohai "  mor config set private-key  # Connect your wallet"
+    ohai "  mor config set private-key  # Enter your wallet private key"
     ohai "  mor serve                   # Dashboard at localhost:19377"
-    ohai ""
-    ohai "SDK key is auto-provisioned from your wallet — no manual setup needed."
   end
 
   test do
