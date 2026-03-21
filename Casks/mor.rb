@@ -2,7 +2,7 @@
 # brew tap drm3labs/drm3 && brew install --cask mor
 
 cask "mor" do
-  version "0.2.5"
+  version "0.2.6"
   sha256 :no_check  # Updated by release automation
 
   url "https://github.com/drm3labs/drm3-releases/releases/download/mor-v#{version}/MOR_#{version}_aarch64.dmg",
