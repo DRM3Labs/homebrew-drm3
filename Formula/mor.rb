@@ -36,13 +36,14 @@ class Mor < Formula
       "mor-linux-#{Hardware::CPU.arm? ? "arm64" : "amd64"}"
     end
     bin.install binary_name => "mor"
+
+    # Remove macOS quarantine flag (runs with install permissions)
+    if OS.mac?
+      system "xattr", "-cr", bin/"mor"
+    end
   end
 
   def post_install
-    if OS.mac?
-      system "xattr", "-d", "com.apple.quarantine", "#{bin}/mor" rescue nil
-    end
-
     ohai "MOR installed! Get started:"
     ohai "  mor config set private-key  # Enter your wallet private key"
     ohai "  mor serve                   # Dashboard at localhost:19377"
