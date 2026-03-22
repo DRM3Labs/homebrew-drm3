@@ -1,35 +1,35 @@
 # homebrew-drm3
 
-Homebrew tap for installing MOR on macOS and Linux.
+Homebrew tap for installing Pistachio on macOS and Linux.
 
 ## Install
 
 ### Desktop App (macOS — recommended)
 
-Installs the MOR desktop app + `mor` CLI in one command. No Gatekeeper warnings.
+Installs the Pistachio desktop app + `pistachio` CLI in one command. No Gatekeeper warnings.
 
 ```bash
 brew tap drm3labs/drm3
-brew install --cask mor
+brew install --cask pistachio
 ```
 
 This gives you:
-- **MOR.app** in `/Applications` — desktop UI with system tray
-- **`mor`** CLI in your PATH — full terminal access
+- **Pistachio.app** in `/Applications` — desktop UI with system tray
+- **`pistachio`** CLI in your PATH — full terminal access
 
 ### CLI Only (macOS + Linux)
 
 ```bash
 brew tap drm3labs/drm3
-brew install mor
+brew install pistachio
 ```
 
 ## What's Here
 
 | Type | Name | Description |
 |------|------|-------------|
-| Cask | `mor` | Desktop app + CLI (macOS only) |
-| Formula | `mor` | CLI binary only (macOS + Linux) |
+| Cask | `pistachio` | Desktop app + CLI (macOS only) |
+| Formula | `pistachio` | CLI binary only (macOS + Linux) |
 
 ## Other Platforms
 
