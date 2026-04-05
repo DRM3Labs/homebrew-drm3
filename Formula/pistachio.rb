@@ -21,11 +21,11 @@ class Pistachio < Formula
   on_linux do
     on_arm do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-linux-arm64"
-      sha256 "11bcfe9d9d451b7515a80e2adb3fb7422d1e1cffdab30b605e99c9701a9b5247"
+      sha256 "583d0d5f309a789a364e519b2f6dc9ffccb20d65e08b4c9a9b5ad35643ba0884"
     end
     on_intel do
       url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/pistachio-linux-amd64"
-      sha256 "b67ed9f4b51065deb10404a0a15e21c1f91231b8288dc8d72038a753834f2cad"
+      sha256 "4e067cd2c6b99f0dfb980204a17667f94e44e63b7adc9c83a538e6efec3e8dd9"
     end
   end
 
