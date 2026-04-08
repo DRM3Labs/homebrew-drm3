@@ -2,8 +2,8 @@
 # brew tap drm3labs/drm3 && brew install --cask pistachio
 
 cask "pistachio" do
-  version "0.9.7"
-  sha256 "1840f641cf984f0995d1a0df37d4e777640f8aa686833b41006127fd43de37ef"
+  version "0.9.8"
+  sha256 "b4dfc98dd096e3b3b1fae80fcd9989e8e718a4ff7205ae10bc72683f647163f8"
 
   url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/Pistachio_#{version}_aarch64.dmg",
       verified: "github.com/drm3labs/drm3-releases/"
