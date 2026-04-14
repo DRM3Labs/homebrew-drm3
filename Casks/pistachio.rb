@@ -3,7 +3,7 @@
 
 cask "pistachio" do
   version "0.9.19"
-  sha256 "01af5225082db2ecec886a5cfaea8e535fa6feb213a00b79a75c7981a685f9e9"
+  sha256 "ae14a5c1a1a8c7969cdc57f5e3feafae5d9d800f62bbeb6792719fd27a20d437"
 
   url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/Pistachio_#{version}_aarch64.dmg",
       verified: "github.com/drm3labs/drm3-releases/"
