@@ -5,3 +5,4 @@ CLAUDE.md
 
 # No sourcemaps — proprietary source
 *.map
+.closed_sessions.json
