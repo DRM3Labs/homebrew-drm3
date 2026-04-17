@@ -2,10 +2,10 @@
 # brew tap drm3labs/drm3 && brew install --cask pistachio
 
 cask "pistachio" do
-  version "0.9.40"
-  sha256 "e91de4fb11e441f37274c31b8966f35a15e492bc7171a2eaf6c7596548ffebca"
+  version "0.9.47"
+  sha256 "906de4c947f5dcd7cdee074bb23e4710dfd20ac3c744509c74ac5a07a8de0cc0"
 
-  url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-v#{version}/Pistachio_#{version}_aarch64.dmg",
+  url "https://github.com/drm3labs/drm3-releases/releases/download/pistachio-desktop-v#{version}/Pistachio_#{version}_aarch64.dmg",
       verified: "github.com/drm3labs/drm3-releases/"
   name "Pistachio"
   desc "Pistachio — DRM3's Morpheus-compatible P2P inference client"
