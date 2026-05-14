@@ -13,7 +13,6 @@ cask "pistachio" do
 
   # Only macOS — Linux users use the Formula
   depends_on macos: ">= :catalina"
-  conflicts_with formula: "pistachio"
 
   app "Pistachio.app"
 
