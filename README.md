@@ -10,12 +10,12 @@ Installs the Pistachio desktop app + `pistachio` CLI in one command. No Gatekeep
 
 ```bash
 brew tap drm3labs/drm3
-brew install --cask pistachio
+brew install --cask pistachio-desktop
 ```
 
 This gives you:
 - **Pistachio.app** in `/Applications` — desktop UI with system tray
-- **`pistachio`** CLI in your PATH — full terminal access
+- **`pistachio`** and **`pistachio-desktop`** CLIs in your PATH
 
 ### CLI Only (macOS + Linux)
 
@@ -24,11 +24,13 @@ brew tap drm3labs/drm3
 brew install pistachio
 ```
 
+Both can be installed side by side — they share `~/.pistachio/config.toml`.
+
 ## What's Here
 
 | Type | Name | Description |
 |------|------|-------------|
-| Cask | `pistachio` | Desktop app + CLI (macOS only) |
+| Cask | `pistachio-desktop` | Desktop app + CLI (macOS only) |
 | Formula | `pistachio` | CLI binary only (macOS + Linux) |
 
 ## Other Platforms
