@@ -6,3 +6,8 @@ CLAUDE.md
 # No sourcemaps — proprietary source
 *.map
 .closed_sessions.json
+
+# secrets — never commit
+.env
+.env.*
+!.env*.example
